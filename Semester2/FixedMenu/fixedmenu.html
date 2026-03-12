@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Menu</title>
+
+    <style>
+        /* Mobile First */
+        html
+        {
+            /* Temporary - delete */
+            height: 200%;
+        }
+        body
+        {
+            background-color: rgb(117, 179, 144);
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Delete */
+        /* #fblogoheader
+        {
+            background-color: rgb(94, 143, 115);
+            padding: 1rem;
+            margin: 1rem;
+        } */
+
+        #pageheader
+        {
+            background-color: rgb(100, 167, 100);
+            padding: 1rem;
+            /* Default */
+            position: static;
+        }
+
+        img#logo
+        {
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: auto;
+        }
+        #pageheader h1
+        {
+            color: rgb(100, 167, 100);
+            text-align: center;
+            /* Remove color */
+            background-color: white;
+        }
+        #pageheader nav
+        {
+            background-color: rgb(94, 143, 115);
+            padding: .5rem;
+            border-radius: 10px;
+        }
+
+        #pageheader ul
+        {
+            background-color: rgb(154, 204, 144);
+            padding: .5rem;
+            list-style-type: none;
+            /* flex component */
+            display: flex;
+            flex-direction: column; 
+            gap: .5rem ;
+        }
+        #pageheader li
+        {
+            text-align: center;
+            padding: .5rem;
+            background-color: rgb(116, 153, 117);
+            border: 1px solid white;
+        }
+        #pageheader a
+        { 
+            color: white;
+            text-decoration: none;
+        }
+        /* None pageheader items */
+        main
+        {
+            padding: 1rem;
+        }
+
+        h2
+        {
+            color: white;
+        }
+        p
+        {
+            line-height: 1.5;
+            color: #333;
+        }
+
+        /* Table and Desktop CSS */
+        @media screen and (min-width:650px)
+        {
+            body
+            {
+                background-color: rgb(100, 167, 100);
+            }
+
+            #pageheader
+            {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                /* flexbox component */
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            #fblogoheader
+            {
+                /* flex component */
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            #pageheader nav
+            {
+                min-width: 400px;
+            }
+
+            #pageheader ul
+            {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            main
+            {
+                padding-top: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="pageheader">
+        <!-- Start the logo and header -->
+        <div id="fblogoheader">
+            <img id="logo" src="Images/paws_logo.png" alt="Paws Logo">
+            <h1>Paws and Whiskers</h1>
+        </div>
+        <!-- End the logo and header -->
+        
+        <!-- Start navigation -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our pets</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2> Fixed Menu</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur qui maxime quis tempora rem ullam molestiae animi quibusdam incidunt reprehenderit inventore veniam vitae eum, aliquid ipsa impedit ipsam blanditiis ea! Placeat earum aut rerum, dolore praesentium voluptatem quisquam voluptates delectus aliquid cumque provident optio necessitatibus ducimus distinctio, rem architecto laudantium expedita veniam, hic impedit porro mollitia fuga nemo. Beatae voluptate saepe ratione aperiam, totam reiciendis deserunt dicta, repellat incidunt maiores, expedita ea eveniet. Amet beatae illo vero saepe unde. Quaerat esse fugit dolorem quam consectetur dicta voluptate inventore provident ea, cumque dolores aliquam doloribus consequatur expedita voluptatibus repellendus quod modi.</p>
+    </main>
+</body>
+</html>
